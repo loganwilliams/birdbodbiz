@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <title>Home</title>
+    <style>
+      body {
+        background: #f0f0f0;
+        padding: 0;
+        margin: 0;
+      }
+
+      .grid {
+        z-index: 1;
+        margin-top: 500px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .row {
+        display: flex;
+        height: 400px;
+        margin-bottom: 3em;
+        overflow: scroll;
+      }
+
+      img {
+        height: 100%;
+      }
+
+      .row div {
+        margin-right: 1em;
+        flex-shrink: 0;
+        padding: 0.5em;
+      }
+
+      .row div:hover {
+        background: white;
+        cursor: pointer;
+      }
+
+      .name {
+        width: 400px;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        padding-right: 2em;
+      }
+
+      .name:hover {
+        background: white;
+        cursor: pointer;
+      }
+
+      .name h3 {
+        margin-top: auto;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-weight: normal;
+      }
+
+      h2 {
+        font-style: italic;
+      }
+
+      .title {
+        /* background-image: url('bluethroat1.jpg'); */
+        background-image: url('DSCF9372.jpg');
+        /* background-image: url('DSCF9539.jpg'); */
+        background-size: cover;
+        background-position: 0 -300px;
+        /* background-position: 0 -400px; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        font-size: 6em;
+        padding: 40px;
+      }
+
+      .product:hover {
+        background: white;
+        cursor: pointer;
+      }
+
+      .footer {
+        margin-left: 440px;
+        margin-bottom: 3em;
+        /* padding: 0.5em; */
+      }
+
+      a, a:visited {
+        color: black;
+      }
+
+      .line2 {
+        letter-spacing: 0.06em;
+      }
+
+      .line3 {
+        letter-spacing: 0.2em;
+      }
+
+      .hero img {
+        height: 800px;
+        overflow:scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title"><span class="line1">bird</span><br /><span class="line2">bod</span><br /><span class="line3">biz</span></div>
+    <div class="grid">
+      <div class="row">
+        <div class="name">
+          <h1>Bluethroat</h1>
+          <h2>Luscinia svecica</h2>
+          <h3>
+            100% lightweight cotton<br />
+            <a href="#"">$130</a>
+          </h3>
+        </div>
+        <div><img src="bluethroat1.jpg" /></div>
+        <div><img src="bluethroat2.jpg" /></div>
+        <div><img src="bluethroat3.jpg" /></div>
+        <div class="product"><img src="bluethroat-front.gif" /></div>
+        <div class="product"><img src="bluethroat-back.gif" /></div>
+      </div>
+      <div class="row">
+        <div class="name">
+          <h1>Rock dove</h1>
+          <h2>Columba livia</h2>
+          <h3>
+            100% acrylic<br />
+            <a href="#">$110</a>
+          </h3>
+        </div>
+        <div><img src="DSCF9330.jpg" /></div>
+        <div><img src="DSCF9256.jpg" /></div>
+        <div><img src="pigeon.jpg" /></div>
+        <div class="product"><img src="pigeon-front.gif" /></div>
+        <div class="product"><img src="pigeon-back.gif" /></div>
+      </div>
+      <div class="row">
+        <div class="name">
+          <h1>California quail</h1>
+          <h2>Callipepla californica</h2>
+          <h3>
+            100% acrylic<br />
+            <a href="#">$110</a>
+          </h3>
+        </div>
+        <div><img src="DSCF9479.jpg" /></div>
+        <div><img src="quail.jpg" /></div>
+        <div><img src="DSCF9528.jpg" /></div>
+        <div class="product"><img src="DSCF9661.png" /></div>
+        <div class="product"><img src="DSCF9667.png" /></div>
+      </div>
+    </div>
+    <div class="footer">
+      Photos by iNaturalist users
+      <a
+        href="https://www.inaturalist.org/observations/224741491"
+        target="_blank"
+        >@shaunpatc</a
+      >,
+      <a
+        href="https://www.inaturalist.org/observations/218419040"
+        target="_blank"
+        >@kmkrebs</a
+      >,
+      <a
+        href="https://www.inaturalist.org/observations/207794500"
+        target="_blank"
+        >@riyga25</a
+      >, licensed under CC BY. All other photos and images &copy; 2024 <a href="https://subject.space">Logan Williams</a>
+      and <a href="https://alomalo.co">Alison Malouf</a>.
+    </div>
+  </body>
+</html>

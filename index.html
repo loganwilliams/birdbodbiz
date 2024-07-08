@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
     <style>
       body {
@@ -10,9 +11,10 @@
 
       .grid {
         z-index: 1;
-        margin-top: 500px;
         display: flex;
         flex-direction: column;
+        margin-top: 100px;
+
       }
 
       .row {
@@ -20,6 +22,7 @@
         height: 400px;
         margin-bottom: 3em;
         overflow: scroll;
+        width: 100%;
       }
 
       img {
@@ -66,12 +69,6 @@
       }
 
       .title {
-        /* background-image: url('bluethroat1.jpg'); */
-        background-image: url('DSCF9372.jpg');
-        /* background-image: url('DSCF9539.jpg'); */
-        background-size: cover;
-        background-position: 0 -300px;
-        /* background-position: 0 -400px; */
         position: fixed;
         top: 0;
         width: 100%;
@@ -79,6 +76,19 @@
         z-index: -1;
         font-size: 6em;
         padding: 40px;
+        text-shadow: 1px 2px 0px white;
+      }
+
+      .bg {
+        background-image: url('DSCF9372.jpg');
+        background-size: cover;
+        background-position: 0 0;
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
       }
 
       .product:hover {
@@ -90,18 +100,59 @@
         margin-left: 440px;
         margin-bottom: 3em;
         /* padding: 0.5em; */
+        font-size: 12px;
+        color: #444;
       }
 
       a, a:visited {
         color: black;
       }
 
-      .line2 {
-        letter-spacing: 0.06em;
+      @media (min-width: 1000px) {
+        .title {
+          width: 300px;
+        }
+
+        .line2 {
+          letter-spacing: 0.06em;
+        }
+
+        .line3 {
+          letter-spacing: 0.2em;
+        }
+
+        .grid {
+          margin-top: 500px;
+        }
+
       }
 
-      .line3 {
-        letter-spacing: 0.2em;
+      @media (max-width: 999px) {
+        .title {
+          font-size: 3em;
+          background-position: 0 -100px;
+        }
+
+        .row {
+          margin-bottom: 2em;
+          height: 200px;
+        }
+
+        .name {
+          width: 100px;
+          padding-right: 1em;
+          font-size: 60%;
+        }
+
+        .footer {
+          margin-left: 1em;
+        }
+
+        .bg {
+          background-size:  auto 100%;
+          background-position: 0 0;
+          min-height: 100%;
+        };
       }
 
       .hero img {
@@ -111,7 +162,8 @@
     </style>
   </head>
   <body>
-    <div class="title"><span class="line1">bird</span><br /><span class="line2">bod</span><br /><span class="line3">biz</span></div>
+    <div class="bg"></div>
+    <div class="title"><span class="line1">bird</span> <span class="line2">bod</span> <span class="line3">biz</span></div>
     <div class="grid">
       <div class="row">
         <div class="name">

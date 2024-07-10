@@ -3,6 +3,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home</title>
     <style>
+      html {
+        overflow-x: hidden;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         background: #f0f0f0;
         padding: 0;
@@ -48,7 +56,7 @@
       }
 
       .bg {
-        background-image: url("DSCF9330.jpg");
+        background-image: url("DSCF9528.jpg");
         background-size: cover;
         background-position: 0 0;
         position: fixed;
@@ -62,7 +70,7 @@
       .footer {
         text-align: center;
         width: 100%;
-        margin-top: 8em;
+        margin-top: 10em;
         color: #444;
       }
 
@@ -93,10 +101,19 @@
         pointer-events: none;
       }
 
+      .product.smaller {
+        transform: scale(170%);
+      }
+
       .order {
         background-color: white;
         padding: 1em;
         padding-left: 2em;
+      }
+      
+      button {
+        font-size: 24px;
+        font-style: italic;
       }
 
       .bird {
@@ -127,14 +144,66 @@
           display: none;
         }
 
-        .name {
+        .grid .one {
+          order: 2 !important;
+        }
+
+        .grid .two {
+          order: 5 !important;
+        }
+
+        .grid .three {
           order: 1 !important;
+        }
+
+        .grid .four {
+          order: 8 !important;
+          transform: translateY(-50px) !important;
+        }
+
+        .grid .five {
+          order: 3 !important;
+          z-index: -1;
+        }
+
+        .grid .six {
+          order: 4 !important;
+          transform: translateY(-50px) !important;
+        }
+
+        .grid .seven {
+          order: 7 !important;
+        }
+
+        .grid .eight {
+          order: 5 !important;
+        }
+
+        .grid div:empty {
+          display: none;
+        }
+
+        .name {
           z-index: 1;
         }
 
         .product,
         .bird {
-          transform: scale(1);
+          transform: scale(1) !important;
+        }
+
+        .order {
+          width: 200px !important;
+          margin-left: 50px;
+          overflow-x: hidden;
+        }
+
+        .seven {
+          z-index: 2 !important;
+        }
+
+        .product {
+          z-index: 10;
         }
       }
     </style>
@@ -142,33 +211,24 @@
   <body>
     <div class="bg"></div>
     <div class="grid">
-      <div class="bird"><img src="pigeon.jpg" /></div>
+      <div class="bird one"><img src="quail.jpg" /></div>
       <div></div>
       <div></div>
-      <div><img src="DSCF9372.jpg" /></div>
+      <div class="two"><img src="DSCF9479.jpg" /></div>
 
-      <div class="name">
-        <h1>Rock dove</h1>
-        <h2>Columba livia</h2>
+      <div class="name three">
+        <h1>California quail</h1>
+        <h2>Callipepla californica</h2>
       </div>
       <div></div>
-      <div class="product"><img src="pigeon-back.gif" /></div>
+      <div class="product smaller four"><img src="quail-back.gif" /></div>
       <div></div>
 
-      <div><img src="DSCF9256.jpg" /></div>
-
-      <div class="product"><img src="pigeon-front.gif" /></div>
-      <div></div>
-
-      <div class="order">
-        <h3><label for="size">Size:</label></h3>
-        <select name="size" id="size">
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-          <option value="extralarge">Extra Large</option>
-        </select>
-
+      <div class="five" style="transform: scale(150%); transform-origin: 0 0;"><img src="DSCF9633.jpg" /></div>
+      <div class="product six"><img src="quail-front.gif" /></div>
+      <div class="seven"><img src="quail-bird3.jpg" /></div>
+      <div class="order eight">
+        <h3>Sizes S-XL</h3>
         <h3>100% acrylic</h3>
         <h3>$110</h3>
 

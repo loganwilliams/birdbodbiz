@@ -55,13 +55,8 @@
         font-style: italic;
       }
 
-      button {
-        font-size: 24px;
-        font-style: italic;
-      }
-
       .bg {
-        background-image: url("bluethroat1.jpg");
+        background-image: url("DSCF9330.jpg");
         background-size: cover;
         background-position: 0 0;
         position: fixed;
@@ -101,9 +96,14 @@
       }
 
       .product {
-        transform: scale(220%);
+        transform: scale(200%);
         /* disable pointer */
         pointer-events: none;
+      }
+
+      button {
+        font-size: 24px;
+        font-style: italic;
       }
 
       .order {
@@ -132,6 +132,14 @@
           min-height: 100%;
         }
 
+        .grid div {
+          order: 4;
+        }
+
+        .grid div:empty {
+          display: none;
+        }
+
         .grid .one {
           order: 2 !important;
         }
@@ -153,7 +161,7 @@
         }
 
         .grid .six {
-          order: 6 !important;
+          order: 5 !important;
         }
 
         .grid .seven {
@@ -161,7 +169,7 @@
         }
 
         .grid .eight {
-          order: 5 !important;
+          order: 6 !important;
         }
 
         .grid div:empty {
@@ -176,32 +184,38 @@
         .bird {
           transform: scale(1);
         }
+
+        .order {
+          width: 200px !important;
+          margin-left: 50px;
+          overflow-x: hidden;
+        }
       }
     </style>
   </head>
   <body>
     <div class="bg"></div>
     <div class="grid">
-      <div class="bird one"><img src="bluethroat-bird2.jpg" /></div>
-      <div class=""></div>
-      <div class=""></div>
-      <div class="two"><img src="DSCF8243.jpg" /></div>
+      <div class="bird one"><img src="pigeon.jpg" /></div>
+      <div></div>
+      <div></div>
+      <div class="two"><img src="DSCF9372.jpg" /></div>
 
       <div class="name three">
-        <h1>Bluethroat</h1>
-        <h2>Luscinia svecica</h2>
+        <h1>Rock dove</h1>
+        <h2>Columba livia</h2>
       </div>
       <div></div>
-      <div class="product four"><img src="bluethroat-front.gif" /></div>
+      <div class="product four"><img src="pigeon-back.gif" /></div>
       <div></div>
 
-      <div class="five"><img src="bluethroat3.jpg" /></div>
-      <div class="product six"><img src="bluethroat-back.gif" /></div>
-      <div class="seven"><img src="bluethroat2.jpg" /></div>
+      <div class="five"><img src="DSCF9256.jpg" /></div>
+      <div class="product six"><img src="pigeon-front.gif" /></div>
+      <div class="seven"></div>
       <div class="order eight">
         <h3>Sizes S-XL</h3>
-        <h3>100% lightweight cotton</h3>
-        <h3>$130</h3>
+        <h3>100% acrylic</h3>
+        <h3>$110</h3>
 
         <button>Order now</button>
       </div>
@@ -209,13 +223,19 @@
     <div class="footer">
       Photos by iNaturalist users
       <a
+        href="https://www.inaturalist.org/observations/224741491"
+        target="_blank"
+        >@shaunpatc</a
+      >,
+      <a
+        href="https://www.inaturalist.org/observations/218419040"
+        target="_blank"
+        >@kmkrebs</a
+      >,
+      <a
         href="https://www.inaturalist.org/observations/207794500"
         target="_blank"
         >@riyga25</a
-      >
-      and
-      <a href="https://www.inaturalist.org/observations/115412791"
-        >@grishahasanov</a
       >, licensed under CC BY. All other photos and images &copy; 2024
       <a href="https://subject.space">Logan Williams</a> and
       <a href="https://alomalo.co">Alison Malouf</a>.
